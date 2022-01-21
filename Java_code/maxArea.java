@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.Java_code;
 
 /***************************************************
  * @question
