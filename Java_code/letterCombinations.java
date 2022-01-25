@@ -72,7 +72,7 @@ public class letterCombinations {
                 for (int j = 0, num = process.size(); j < num; j++) {
                     String pop = process.poll();
                     for (int k = 0; k < table.get(digits.charAt(i)).length(); k++)
-                        process.add(pop + String.valueOf(table.get(digits.charAt(i)).charAt(k)));
+                        process.add(pop + table.get(digits.charAt(i)).charAt(k));
                 }
         }
     }
