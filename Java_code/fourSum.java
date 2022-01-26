@@ -27,32 +27,24 @@ public class fourSum {
         for (int a = 0; a < nums.length; a++) {
             if (a > 0 && nums[a] == nums[a - 1])
                 continue;
-            for (int b = a + 1; b < nums.length - 1; b++) {
+            for (int b = a + 1; b < nums.length; b++) {
                 if (b > a + 1 && nums[b] == nums[b - 1])
                     continue;
-                int c = b + 1, d = nums.length - 1;
-                while (c < d)
-                    switch (Check_inList(result, nums, a, b, c, d, target)) {
-                        case 0 -> d--;
-                        case -1 -> {
-                            do {
-                                c++;
-                            }
-                            while (nums[c] == nums[c - 1]);
-                        }
-                        case 1 -> {
-                            do {
-                                d--;
-                            }
-                            while (nums[d] == nums[d + 1]);
-                        }
+                for(int c = b + 1; c < nums.length; c++){
+                    if(c > b + 1 && nums[c] == nums[c - 1])
+                        continue;
+                    for(int d = c + 1; d < nums.length; d++){
+                        if(d > c + 1 && nums[d] == nums[d - 1])
+                            continue;
+                        Check_inList(result, nums, a, b, c, d, target);
                     }
+                }
             }
         }
         return result;
     }
 
-    public int Check_inList(List<List<Integer>> result, int[] nums, int a, int b, int c, int d, int target) {
+    public void Check_inList(List<List<Integer>> result, int[] nums, int a, int b, int c, int d, int target) {
         if (nums[a] + nums[b] + nums[c] + nums[d] == target) {
             List<Integer> single = new ArrayList<Integer>() {{
                 add(nums[a]);
@@ -61,10 +53,7 @@ public class fourSum {
                 add(nums[d]);
             }};
             result.add(single);
-            return 0;
-        } else if (a + b + c + d > target)
-            return 1;
-        else return -1;
+        }
     }
 
     public static void main(String[] args) {
