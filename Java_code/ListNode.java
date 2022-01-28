@@ -46,6 +46,6 @@ public class ListNode {
 
     public static void printList(ListNode L){
         for(ListNode i = L; i != null; i = i.next)
-            System.out.print(i.val);
+            System.out.println(i.val);
     }
 }
