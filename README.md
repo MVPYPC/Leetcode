@@ -80,3 +80,8 @@ find方法是我一开始写的，本以为使用了双指针，但是发现和�
 题解中介绍了另外两种方法，大同小异，主要是dummy结点的使用（在head前面加一个结点，就可以将head结点也当做普通结点处理了），还有快慢指针的思想非常容易理解，且代码也很简洁。  
 快慢指针的空间复杂度怎么会比栈还高捏:question::question::question::question:
 ***
+### 20. 有效的括号
+这道题:exclamation::exclamation::exclamation:  
+:older_man:青回:exclamation::exclamation::exclamation:  
+现在来看非常简单了，大一刚接触C语言时却觉得很难理解，利用栈这一数据结构即可。  
+数据量较少，没有必要使用HashMap进行保存查询，直接if-else，switch.
