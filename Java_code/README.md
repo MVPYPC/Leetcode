@@ -72,3 +72,7 @@ isValid.java
 ## 21. 合并两个有序链表
 mergeTwoLists.java
 > 两种方法，重新构造链表（merge），在原有基础上重组链接（pasteMerge）
+***
+## 22. 括号生成
+generateParenthesis.java
+***
