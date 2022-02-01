@@ -79,3 +79,6 @@ generateParenthesis.java
 ## 23. 合并K个升序链表
 mergeKLists.java
 > 其中merge2Lists方法其实就是`21. 合并两个有序链表`中的merge方法，由于Leetcode平台无法检测到我的包，只能这么复制一手
+## 24. 两两交换链表中的节点
+swapPairs.java
+***
