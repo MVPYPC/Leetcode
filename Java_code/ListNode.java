@@ -6,9 +6,12 @@ public class ListNode {
 
     ListNode next;
 
-    ListNode() {}
+    ListNode() {
+    }
 
-    ListNode(int val) {this.val = val;}
+    ListNode(int val) {
+        this.val = val;
+    }
 
     ListNode(int val, ListNode next) {
         this.val = val;
@@ -25,15 +28,15 @@ public class ListNode {
      * 正确输出：链表头结点
      * num为空：null
      */
-    public static ListNode initlist(int[] num){
-        if(num.length == 0)
+    public static ListNode initlist(int[] num) {
+        if (num.length == 0)
             return null;
 
         ListNode head = new ListNode();
         ListNode cur = head;
         ListNode last = new ListNode();
 
-        for(int i: num){
+        for (int i : num) {
             cur.val = i;
             cur.next = new ListNode();
             last = cur;
@@ -44,8 +47,10 @@ public class ListNode {
         return head;
     }
 
-    public static void printList(ListNode L){
-        for(ListNode i = L; i != null; i = i.next)
-            System.out.println(i.val);
+    public static void printList(ListNode L) {
+        for (ListNode i = L; i != null; i = i.next)
+            if (i.next != null)
+                System.out.print(String.valueOf(i.val) + "->");
+            else System.out.print(String.valueOf(i.val));
     }
 }

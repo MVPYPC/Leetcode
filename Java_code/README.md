@@ -82,3 +82,7 @@ mergeKLists.java
 ## 24. 两两交换链表中的节点
 swapPairs.java
 ***
+## 25. K 个一组翻转链表
+reverseKGroup.java
+> 其中swap方法其实就是`24. 两两交换链表中的节点`中的swap方法，由于Leetcode平台无法检测到我的包，只能这么复制一手  
+> 更新了ListNode中的printList方法，打印更整洁。
