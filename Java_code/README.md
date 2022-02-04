@@ -86,3 +86,11 @@ swapPairs.java
 reverseKGroup.java
 > 其中swap方法其实就是`24. 两两交换链表中的节点`中的swap方法，由于Leetcode平台无法检测到我的包，只能这么复制一手  
 > 更新了ListNode中的printList方法，打印更整洁。
+***
+## 26. 删除有序数组中的重复项
+removeDuplicates.java
+> 实现了三种方法  
+> 暴力双重循环 remove_vio
+> hashmap    remove_hash
+> 快慢指针    remove_2p
+***
