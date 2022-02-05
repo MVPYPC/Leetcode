@@ -94,3 +94,9 @@ removeDuplicates.java
 > hashmap    remove_hash
 > 快慢指针    remove_2p
 ***
+## 27. 移除元素
+removeElement.java
+***
+## 28. 实现 strStr()
+strStr.java
+***
