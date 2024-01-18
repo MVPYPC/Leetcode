@@ -107,3 +107,6 @@ divide.java
 findAnagrams.java
 >为30题做铺垫
 ***
+## 30.串联所有单词的子串
+findSubstring_Concatenates.java
+***
