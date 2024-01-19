@@ -110,3 +110,7 @@ findAnagrams.java
 ## 30.串联所有单词的子串
 findSubstring_Concatenates.java
 ***
+## 31.下一个排列
+nextPermutation.java
+>实现了sort类，用于排序，（冒泡，插入，快排）
+***
